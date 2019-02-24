@@ -1,28 +1,216 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2b2b;
-  color: rgb(214, 214, 214);
-  max-width: 900px;
-  margin: 0 auto;
+* {
+  font-family: "Signika", sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.75);
 }
 
-#root {
-  background-color: #3f3f3f;
-  padding: 60px;
-  border-radius: 20px;
+strong {
+  font-weight: 600;
+}
+
+nav {
+  background: #40596b;
+  font-size: 1.25em;
+  background-size: cover;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 18px 6px;
+  color: #ffd05a;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+#header {
+  min-height: 500px;
   height: 100%;
-  margin-top: 100px;
+  width: 100;
+  align-items: center;
+  background-color: #55c0ec;
+  margin: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
+#header button {
+  color: #595959;
 }
 
 h1 {
-  margin-top: 50px;
+  color: #1d4353;
+  font-size: 5em;
+  line-height: 1;
+  letter-spacing: -0.1875rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
-p {
-  font-size: 22px;
+#about {
+  min-height: 400px;
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+  margin-bottom: 0;
+  color: #3f3f3f;
+}
+
+h2:after {
+  background-color: #55c0ec;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 160px;
+}
+
+#features {
+  background: #90DDAA;
+  min-height: 300px;
+}
+
+.card {
+  background-color: #40596b;
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.25em;
+  margin-bottom: 3em;
+  width: 22%;
+}
+
+.card a {
+  text-decoration: underline;
+} 
+
+.cardSection {
+  width: 85%;
+}
+
+.card-left {
+  margin-left: 6em;
+  margin-right: 1.5em;
+}
+
+.card-center {
+}
+
+.card-right {
+  margin-right: 6em;
+  margin-left: 1.5em;
+}
+
+.card-body {
+  background: white;
+}
+
+.card-image-top {
+  width: 224px;
+  margin: 4rem 0;
+}
+
+code {
+    background-color: rgba(0,0,0,.05);
+    border-radius: 2px;
+    color: crimson;
+    margin: 0;
+    padding: .2rem;
+}
+
+#addToSlack {
+  background: yellow;
+  min-height: 300px;
+  font-size: 1.25em;
+}
+
+.btn-cta-bottom {
+  font-size: 1.5em;
+  background: #40596B;
+}
+
+.btn-cta-bottom img {
+  width: 2.5rem;
+}
+
+footer {
+  background: #40596B;
+  font-size: 0.825rem;
+  line-height: .5em;
+}
+
+footer p, a {
+  color: #BEC6CC;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.btn-cta {
+  font-size: 1.75em;
+}
+
+.btn-cta img {
+  width: 2.5rem;
+}
+
+#header p {
+  font-size: 1.675rem;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: anti-aliased;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #FFD05A;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+#myBtn img {
+  width: 30px;
 }

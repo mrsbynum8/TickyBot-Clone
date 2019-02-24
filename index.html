@@ -1,38 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="./favicon.png" />
-        <meta name="theme-color" content="#000000" />
-        <title>Simple Boilerplate</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-        <script type="text/javascript" src="src/js/index.js"></script>
-        <!-- Add additional CSS & JS files as necessary here -->
-    </head>
-    <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p class="subtext">
-                An Example JS Hook using JQuery.
-            </p>
 
-            <h2>Instructions:</h2>
-            <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "live-server".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./favicon.png" />
+  <meta name="theme-color" content="#000000" />
+  <title>Rhannie B's TickyBot Clone</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="src/css/index.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+  <!-- Add additional CSS & JS files as necessary here -->
+  <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- GO TO TOP BUTTON -->
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.svg" alt=""></button>
+  
+  
+  
+  
+  <!-- NAVBAR SECTION -->
+
+
+    <nav class="container-fluid text-center">
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#addToSlack">Add to Slack</a></li>
+    </ul>
+  </nav>
+
+<!-- HEADER SECTION -->
+
+  <div id="header" class="row justify-content-center align-items-center">
+    <div class="col-md-6 col-lg-4 text-center">
+      <h1><strong>Ticky</strong>Bot</h1>
+      <p class="text-white font-weight-lighter">Let your team manage their support tickets 100% inside Slack</p>
+      <a class="btn-cta" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread"><button class="btn-light px-5 py-3 rounded"><img class="mr-3" src="images/slack.svg" alt="">Add to <strong>Slack</strong></button></a>
+    </div>
+    <div class="col-md-6 col-lg-4 text-center">
+    <img src="images/tickybot.svg" alt="">
+    </div>
+  </div>
+
+
+<!-- ABOUT SECTION -->
+
+
+  <div id="about" class="bg-light row justify-content-center align-items-center">
+    <div class="col-12 text-center">
+      <h2>What Is <strong>Ticky</strong>Bot</h2>
+    </div>
+    <div class="col-md-5 col-lg-4">
+      <p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
+    </div>
+    <div class="col-md-5 col-lg-4">
+      <p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p>
+    </div>
+    <div class="col-md-10 col-lg-8">
+      <p>Support requests shouldn't be handled through Slack's direct messages.<br>
+        <span class="font-italic">Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</span></p>
+    </div>
+  </div>
+
+<!-- FEATURES SECTION -->
+<section class="container-fluid" id="features"><div class="cardSection mx-auto">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-12 mt-4 mb-5">
+        <h2>How It Works</h2>
+      </div>
+        <div class="card card-left"><img src="images/workplace.svg" class="card-image-top">
+          <div class="card-body">
+            <p class="card-text">You can add <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or <a href="#addToSlack">clicking here</a></p>
         </div>
-    </body>
+      </div>
+        <div class="card card-center"><img src="images/bubble.svg"
+            class="card-image-top">
+          <div class="card-body">
+            <p class="card-text">Your users can open a ticket by typing <code>/ticket</code> and their message into the chat field</p>
+          </div>
+        </div>
+        <div class="card card-right"><img src="images/tasks.svg" class="card-image-top">
+          <div class="card-body">
+            <p class="card-text">Once you or another admin solved their problems you can type <code>/ticket close #id</code> to close the ticket</p>
+          </div></div>
+    </div></div>
+  </section>
+
+
+  <!-- ADD TO SLACK SECTION -->
+
+
+  <section class="container-fluid bg-light" id="addToSlack">
+    <div class="row justify-content-center align-items-center text-center">
+      <div class="col-lg-12 mt-4 mb-5">
+        <h2>Start Using <strong>Ticky</strong>Bot Today</h2></div>
+        <div class="col-4 px-5"><p><strong>Ticky</strong>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+        <a class="" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread"><button class="btn-cta-bottom my-5 btn-dark text-light px-5 py-3 rounded"><img class="mr-3" src="images/slack.svg" alt="">Add to <strong class="text-light">Slack</strong></button></a>
+        <p class="my-5">... so you don't need to go back and forth with another app.</p>
+      </div></div>
+    </div>
+  </section>
+
+
+<!-- FOOTER SECTION -->
+
+
+  <footer class="row align-items-center justify-content-center text-center">
+    <div class="col-12 my-4 ">
+      <p>Made with ❤️ by Mrs. Bynum</p>
+      <p>Source code is available on my <a href="https://github.com/mrsbynum8/TickyBot-Clone">GitHub page</a></p>
+      <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON SCRIPT-->
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+ <!-- BOOTSTRAP SCRIPT SECTION -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
 </html>
