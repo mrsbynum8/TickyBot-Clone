@@ -104,6 +104,8 @@ h2:after {
   font-size: 1.25em;
   margin-bottom: 3em;
   width: 22%;
+  min-width: 340px;
+  max-width: 340px;
 }
 
 .card a {
@@ -111,11 +113,13 @@ h2:after {
 } 
 
 .cardSection {
-  width: 85%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
 }
 
 .card-left {
-  margin-left: 6em;
   margin-right: 1.5em;
 }
 
@@ -123,7 +127,6 @@ h2:after {
 }
 
 .card-right {
-  margin-right: 6em;
   margin-left: 1.5em;
 }
 
@@ -142,6 +145,7 @@ code {
     color: crimson;
     margin: 0;
     padding: .2rem;
+    font-size: .875rem;
 }
 
 #addToSlack {
@@ -150,9 +154,19 @@ code {
   font-size: 1.25em;
 }
 
+.addToSlackText {
+  width: 550px;
+  margin: auto 10%;
+}
+
 .btn-cta-bottom {
   font-size: 1.5em;
   background: #40596B;
+  max-width: 320px;
+}
+
+.btn-cta-bottom:hover {
+  background: #595959;
 }
 
 .btn-cta-bottom img {
@@ -175,6 +189,7 @@ footer a {
 
 .btn-cta {
   font-size: 1.75em;
+  
 }
 
 .btn-cta img {
