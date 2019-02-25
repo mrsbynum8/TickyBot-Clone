@@ -45,12 +45,17 @@ nav a:hover {
 }
 
 #header {
-  min-height: 500px;
-  height: 100%;
-  width: 100;
+  height: auto;
+  min-height: 800px;
+  width: 100%;
   align-items: center;
   background-color: #55c0ec;
   margin: 0;
+}
+
+
+.fadein {
+  opacity: 0;
 }
 
 #header button {
@@ -67,7 +72,8 @@ h1 {
 }
 
 #about {
-  min-height: 400px;
+  height: auto;
+  min-height: 450px;
   font-size: 1.25rem;
 }
 
@@ -94,6 +100,7 @@ h2:after {
 #features {
   background: #90DDAA;
   min-height: 300px;
+  perspective: 1300px;
 }
 
 .card {
@@ -113,11 +120,8 @@ h2:after {
 } 
 
 .cardSection {
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  justify-content: center;
 }
+
 
 .card-left {
   margin-right: 1.5em;
@@ -140,38 +144,36 @@ h2:after {
 }
 
 code {
-    background-color: rgba(0,0,0,.05);
-    border-radius: 2px;
-    color: crimson;
-    margin: 0;
-    padding: .2rem;
-    font-size: .875rem;
-}
+  background-color: rgba(0,0,0,.05);
+  border-radius: 2px;
+  color: crimson;
+  margin: 0;
+  padding: .2rem;
+  font-size: .875rem;}
 
-#addToSlack {
-  background: yellow;
-  min-height: 300px;
-  font-size: 1.25em;
-}
+  #addToSlack {
+    background: yellow;
+    min-height: 300px;
+    font-size: 1.25em;
+  }
+  
+  .addToSlackText {
+    width: 550px;
+    margin: auto 10%;
+  }
 
-.addToSlackText {
-  width: 550px;
-  margin: auto 10%;
-}
-
-.btn-cta-bottom {
-  font-size: 1.5em;
-  background: #40596B;
-  max-width: 320px;
-}
-
-.btn-cta-bottom:hover {
-  background: #595959;
-}
-
-.btn-cta-bottom img {
-  width: 2.5rem;
-}
+  .btn-cta-bottom {
+    font-size: 1.5em;
+    background: #40596B;
+    max-width: 320px;
+  }
+  
+  .btn-cta-bottom:hover {
+    background: #595959;
+  }
+  
+  .btn-cta-bottom img {
+    width: 2.5rem; }
 
 footer {
   background: #40596B;
@@ -220,10 +222,11 @@ footer a {
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
+  transition: all 1200ms ease-in;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: white;
 }
 
 #myBtn img {
