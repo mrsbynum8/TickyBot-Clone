@@ -17,4 +17,4 @@ window.onscroll = function() {
     document.documentElement.scrollTop = 0; }
 
 
-        //  $(".fadein").delay(1000).animate({"opacity": "1"}, 1500);
+        //  $("#myBtn").delay(1000).animate({"opacity": "1"}, 1500);
