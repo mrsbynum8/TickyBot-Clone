@@ -62,6 +62,20 @@ nav a:hover {
   color: #595959;
 }
 
+.btn-cta img, .btn-cta-bottom img {
+  -webkit-transition-duration: 0.8s; 
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.imgHover {
+  -webkit-transform: rotate(180deg) scale(1.25);
+  transform: rotate(180deg) scale(1.25);
+  -moz-transform:rotate(180deg) scale(1.25);
+  -o-transform:rotate(180deg) scale(1.25);
+}
+
 h1 {
   color: #1d4353;
   font-size: 5em;
@@ -222,7 +236,7 @@ footer a {
   cursor: pointer;
   padding: 8px;
   border-radius: 4px;
-  transition: all 1200ms ease-in;
+  transition: all 2500ms ease-in;
 }
 
 #myBtn:hover {
@@ -231,4 +245,12 @@ footer a {
 
 #myBtn img {
   width: 30px;
+}
+
+.btn-light, .btn-dark {
+  transition: all .5s ease;
+}
+
+.btn-light:hover, .btn-dark:hover {
+  transform: scale(1.1) perspective(1px)
 }

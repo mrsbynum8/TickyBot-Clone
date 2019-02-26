@@ -11,8 +11,7 @@
   <link rel="stylesheet" type="text/css" href="src/css/index.css">
   <link rel="stylesheet" type="text/css" href="src/css/animate.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-  <script type="text/javascript" src="src/js/index.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Add additional CSS & JS files as necessary here -->
   <link href="https://fonts.googleapis.com/css?family=Signika:300,400,600,700" rel="stylesheet">
@@ -44,7 +43,7 @@
     <div class="col-md-6 col-lg-4 text-center" data-aos="fade" data-aos-duration="2500">
       <h1><strong>Ticky</strong>Bot</h1>
       <p class="text-white px-5 font-weight-lighter">Let your team manage their support tickets 100% inside Slack</p>
-      <a class="btn-cta" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread"><button class="btn-light px-5 py-3 rounded"><img class="mr-3" src="images/slack.svg" alt="">Add to <strong>Slack</strong></button></a>
+      <a class="btn-cta" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread"><button class="btn-light px-5 py-3 rounded"><img class="mr-3" src="images/slack.svg" alt="" id="lightSlackButton">Add to <strong>Slack</strong></button></a>
     </div>
     <div class="col-md-6 col-lg-4 text-center my-sm-5 my-5" data-aos="fade" data-aos-delay="150" data-aos-duration="2500">
     <img class="img-fluid" src="images/tickybot.svg" alt="">
@@ -129,11 +128,12 @@
 
  <!-- BOOTSTRAP SCRIPT SECTION -->
   <script>
-    AOS.init({duration: 1500});
+   
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
 </body>
 
 </html>
