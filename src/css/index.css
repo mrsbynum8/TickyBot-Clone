@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .btn-cta img, .btn-cta-bottom img {
-  -webkit-transition-duration: 0.8s; 
+  -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
   -o-transition-duration: 0.8s;
   transition-duration: 0.8s;
@@ -131,21 +131,10 @@ h2:after {
 
 .card a {
   text-decoration: underline;
-} 
-
-.cardSection {
 }
 
-
-.card-left {
+.card-left, .card-right {
   margin-right: 1.5em;
-}
-
-.card-center {
-}
-
-.card-right {
-  margin-left: 1.5em;
 }
 
 .card-body {
@@ -170,7 +159,7 @@ code {
     min-height: 300px;
     font-size: 1.25em;
   }
-  
+
   .addToSlackText {
     width: 550px;
     margin: auto 10%;
@@ -181,11 +170,11 @@ code {
     background: #40596B;
     max-width: 320px;
   }
-  
+
   .btn-cta-bottom:hover {
     background: #595959;
   }
-  
+
   .btn-cta-bottom img {
     width: 2.5rem; }
 
@@ -205,7 +194,7 @@ footer a {
 
 .btn-cta {
   font-size: 1.75em;
-  
+
 }
 
 .btn-cta img {
